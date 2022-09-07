@@ -1,0 +1,18 @@
+.hambug {
+  border: 2px solid;
+  width: 32px;
+}
+.hambug__item {
+  display: block;
+  width: 26px;
+  height: 4px;
+  margin: 3px;
+  background-color: black;
+  border-radius: 3px;
+}
+
+.hambug:hoveritem {
+  background-color: red;
+}
+
+/*# sourceMappingURL=style.css.map */

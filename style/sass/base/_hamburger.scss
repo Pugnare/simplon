@@ -1,0 +1,22 @@
+.hambug{
+    border: 2px solid;
+    width: 32px;
+
+
+    &__item{
+        display:block;
+        width: 26px;
+        height: 4px;
+        margin: 3px;
+
+        background-color: black;
+        border-radius: 3px;
+    }
+}
+
+.hambug:hover{
+   
+    &item{
+        background-color: red;
+    }
+}
