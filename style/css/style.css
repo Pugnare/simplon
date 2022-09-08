@@ -1,18 +1,58 @@
-.hambug {
-  border: 2px solid;
-  width: 32px;
+@media only screen and (max-width: 600px) {
+  header {
+    position: relative;
+  }
+  .hamburg__btn, .hamburg__content {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .hamburg__btn {
+    top: -5px;
+    right: -3px;
+  }
 }
-.hambug__item {
+.hamburg__content {
+  height: 25px;
+  width: 30px;
+}
+.hamburg__item {
   display: block;
   width: 26px;
   height: 4px;
-  margin: 3px;
+  margin: 3px auto;
   background-color: black;
   border-radius: 3px;
 }
-
-.hambug:hoveritem {
-  background-color: red;
+.hamburg__btn {
+  position: absolute;
+  z-index: 99;
+  width: 30px;
+  height: 30px;
+  opacity: 0;
+}
+.hamburg__btn ~ .hamburg__content .hamburg__item {
+  transition: transform 0.18s;
+}
+.hamburg__btn:hover ~ .hamburg__content .hamburg__item:nth-child(2) {
+  visibility: hidden;
+}
+.hamburg__btn:hover ~ .hamburg__content .hamburg__item:first-child {
+  transform: rotate(-40deg);
+}
+.hamburg__btn:hover ~ .hamburg__content .hamburg__item:last-child {
+  transform: rotate(40deg);
+}
+.hamburg__btn:hover ~ .hamburg__content .hamburg__item {
+  position: absolute;
+  top: 6px;
+  transition: transform 0.18s;
+}
+.hamburg__btn ~ .menu {
+  visibility: hidden;
+}
+.hamburg__btn:checked ~ .menu {
+  visibility: visible;
 }
 
 /*# sourceMappingURL=style.css.map */
