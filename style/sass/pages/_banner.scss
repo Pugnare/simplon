@@ -1,0 +1,11 @@
+
+.banner{
+  &--fixed{
+    background-color: $bg_binary;
+  }
+}
+
+.heros{
+  filter: grayscale(1);
+}
+

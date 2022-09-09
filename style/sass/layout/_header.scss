@@ -1,0 +1,42 @@
+.banner {
+  padding-bottom: 120px;
+  height: 230px;
+
+  &--fixed {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+  }
+}
+
+.branding {
+  padding-left: 1.5em;
+}
+
+.heros {
+  position: absolute;
+  left: 16em;
+  top: 0px;
+  width: 20%;
+}
+
+.menu {
+
+  &__content {
+    display: flex;
+  }
+
+  &__item {
+    display: flex;
+    justify-content: center;
+    width: 90px;
+  }
+
+  &__link {
+    text-align: center;
+  }
+}
+
+
+

@@ -1,8 +1,15 @@
-@import 'base/viewport';
+@import 'base/reset';
 @import 'base/fonts';
-@import 'base/hamburger';
+
+@import 'utils/variable';
+
+@import 'components/viewport';
+@import 'components/hamburger';
 
 @import 'layout/navbarre';
 @import 'layout/header';
 @import 'layout/main';
 @import 'layout/footer';
+
+@import 'pages/home';
+@import 'pages/banner';

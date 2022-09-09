@@ -10,35 +10,41 @@
 </head>
 
 <body>
-  <header>
-    <h1 class="branding">Jacques Diarra</h1>
-    <nav class="navbarre__main">
+  <header class="banner">
+    <div class="banner--fixed">
+      <h1 class="branding" id="branding">Jacques Diarra</h1> 
+      <img class="heros" src="./img/img-banner.png" alt="">
+      <nav class="navbarre__main">
 
-      <input class="hamburg__btn" type="checkbox" id="hamburg">
+        <input class="hamburg__btn" type="checkbox" id="hamburg">
 
-      <div class="hamburg__content">
-        <span class="hamburg__item"></span>
-        <span class="hamburg__item"></span>
-        <span class="hamburg__item"></span>
-      </div>
+        <div class="hamburg__content">
+          <span class="hamburg__item"></span>
+          <span class="hamburg__item"></span>
+          <span class="hamburg__item"></span>
+        </div>
 
 
-      <ul class="menu">
-        <li><a href="#">accueil</a></li>
-        <li><a href="#">html</a></li>
-        <li><a href="#">css</a></li>
-        <li><a href="#">projet</a></li>
-        <li><a href="#">contect</a></li>
-      </ul>
-    </nav>
+        <ul class="menu__content">
+          <li class=" menu__item"><a class="menu__link" href="#branding">accueil</a></li>
+          <li class=" menu__item"><a class="menu__link" href="#">html</a></li>
+          <li class=" menu__item"><a class="menu__link" href="#">css</a></li>
+          <li class=" menu__item"><a class="menu__link" href="#">projet</a></li>
+          <li class=" menu__item"><a class="menu__link" href="#">contact</a></li>
+        </ul>
+
+      </nav>
+    </div>
+   
   </header>
   <main>
-    <article class="area_primary">
-      <h2>titre</h2>
-      <section class="intro">
-        <h3>presentation</h3>
+    <article class="area__primary presentation__container">
+      <h2 class="presentation__headline headline">full stack</h2>
+      <section class="presentation__content">
+        <h3 class="presentation__subheading subheading">presentation</h3>
 
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ut doloremque illum voluptas sint libero
+        <p class="presentation__para">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ut doloremque illum
+          voluptas sint libero
           velit, nesciunt quos? Natus, distinctio in voluptate accusantium iure aperiam. Id vero assumenda
           quasi
           inventore quos ipsam, rerum placeat nobis iusto. Pariatur ex non neque saepe ad quidem asperiores
@@ -61,15 +67,23 @@
 
 
 
-    <article class="area_binary">
-      <h2>certificat</h2>
-      <section>
-        <h3>sous titre</h3>
-        <span>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ullam eum iste vitae labore id in ipsum,
-          quam molestiae quae deserunt sapiente porro sunt necessitatibus expedita minima, facilis obcaecati
-          quidem quasi.</span>
-        <img src="#" alt="certificat html">
-        <img src="#" alt="certificat css">
+    <article class="area_binary degree__container">
+      <h2 class="degree__headline headline">certificat</h2>
+      <section class="degree__content">
+        <h3 class="degree__sudheading sudheading">sous titre</h3>
+
+        <span class="degree__detail">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ullam eum iste vitae
+            labore id in ipsum,
+            quam molestiae quae deserunt sapiente porro sunt necessitatibus expedita minima, facilis obcaecati
+            quidem quasi.</span>
+
+          <section class="degree__image--center">
+            <img class="degree__image" src="./img/cert-html.jpg" alt="certificat html">
+            <img class="degree__image" src="./img/cert-css.jpg" alt="certificat css">
+          </section>
+        
+
+
       </section>
     </article>
 
@@ -77,39 +91,70 @@
 
 
 
-    <article class="area_ternary">
-      <h2>acquis</h2>
+    <article class="area_ternary feature__container">
+      <h2 class="feature__headline">acquis</h2>
+      <div class="feature--flex">
 
-      <section>
-        <h3>html</h3>
-        <ul>
-          <li><span></span></li>
-          <li><span></span></li>
-          <li><span></span></li>
-          <li><span></span></li>
-          <li><span></span></li>
-          <li><span></span></li>
-          <li><span></span></li>
-          <li><span></span></li>
-          <li><span></span></li>
-        </ul>
-      </section>
+        <table class="feature__list">
+          <tr>
+            <th class="feature__list-head" colspan="3">html</th>
+          </tr>
 
-      <section>
-        <h3>css</h3>
-        <ul>
-          <li><span></span></li>
-          <li><span></span></li>
-          <li><span></span></li>
-          <li><span></span></li>
-          <li><span></span></li>
-          <li><span></span></li>
-        </ul>
-      </section>
+          <tr class="feature__list-sub">
+            <td class="feature__item"><span>structure du document</span></td>
+            <td class="feature__item"><span>information de la page</span></td>
+            <td class="feature__item"><span>balise de structure</span></td>
+          </tr>
+ 
+          <tr class="feature__list-sub">
+            <td class="feature__item"><span>liens</span></td>
+            <td class="feature__item"><span>mise en forme de du texte</span></td>
+            <td class="feature__item"><span>tableaux</span></td>
+          </tr>
 
+          <tr class="feature__list-sub">
+            <td class="feature__item"><span>listes</span></td>
+            <td class="feature__item"><span>formulaires</span></td>
+            <td class="feature__item"><span>médias</span></td>
+          </tr>
+
+        </table>
+
+
+        <table class="feature__list">
+
+          <tr>
+            <th class="feature__list-head" colspan="3">css</th>
+          </tr>
+
+          <tr class="feature__list-sub">
+            <td><span>sélecteurs</span></td>
+            <td><span>texte</span></td>
+            <td><span>espacement & bordures</span></td>
+          </tr>
+
+          <tr class="feature__list-sub">
+            <td><span>nouveautés css3</span></td>
+            <td><span>medias queries</span></td>
+            <td><span>pseudo classes</span></td>
+          </tr>
+
+          <tr class="feature__list-sub">
+            <td><span>arriere-plan</span></td>
+            <td><span>listes</span></td>
+            <td><span>positionnement et tailles</span></td>
+            
+            <tr class="feature__list-sub">
+          <tr><td><span>position et tailles</span></td></tr>
+          
+        </table>
+
+      </div>
     </article>
+
+
     <article class="area_fourth">
-      <h2>Projet professsionel</h2>
+      <h2 class="headline">Projet professsionel</h2>
       Lorem ipsum dolor sit amet consectetur, adipisicing elit. Enim perferendis commodi laboriosam suscipit
       nobis, iure nemo eius eos aperiam mollitia et dolore id aut illo repellendus tempora. Repudiandae blanditiis
       numquam iste. Optio nostrum nobis autem, ut tempore laboriosam, sint officia inventore voluptatum,

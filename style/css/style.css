@@ -1,3 +1,17 @@
+body {
+  padding: 0;
+  margin: 0;
+}
+
+ul,
+li {
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+
 @media only screen and (max-width: 600px) {
   header {
     position: relative;
@@ -11,8 +25,26 @@
     top: -5px;
     right: -3px;
   }
+  .hamburg__btn ~ .menu {
+    visibility: hidden;
+  }
+  .hamburg__btn:checked ~ .menu {
+    visibility: visible;
+  }
+}
+@media only screen and (min-width: 601px) {
+  header {
+    position: initial;
+  }
+  .hamburg__btn, .hamburg__content {
+    visibility: hidden;
+  }
+  .hamburg__btn ~ .menu {
+    visibility: initial;
+  }
 }
 .hamburg__content {
+  position: absolute;
   height: 25px;
   width: 30px;
 }
@@ -48,11 +80,115 @@
   top: 6px;
   transition: transform 0.18s;
 }
-.hamburg__btn ~ .menu {
-  visibility: hidden;
+
+.banner {
+  padding-bottom: 120px;
+  height: 230px;
 }
-.hamburg__btn:checked ~ .menu {
-  visibility: visible;
+.banner--fixed {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+}
+
+.branding {
+  padding-left: 1.5em;
+}
+
+.heros {
+  position: absolute;
+  left: 16em;
+  top: 0px;
+  width: 20%;
+}
+
+.menu__content {
+  display: flex;
+}
+.menu__item {
+  display: flex;
+  justify-content: center;
+  width: 90px;
+}
+.menu__link {
+  text-align: center;
+}
+
+/*---------------------------------------------------------------------------*\
+  #GENERIC
+\*---------------------------------------------------------------------------*/
+.headline {
+  margin-left: 30px;
+  padding: 10px 0 10px 20px;
+}
+
+/*---------------------------------------------------------------------------*\
+  #AREA PRIMARY
+\*---------------------------------------------------------------------------*/
+.presentation__headline {
+  width: 60%;
+  align-self: center;
+  text-align: center;
+}
+.presentation__container {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-evenly;
+}
+.presentation__content {
+  width: 40%;
+}
+
+/*---------------------------------------------------------------------------*\
+  #AREA BINARY
+\*---------------------------------------------------------------------------*/
+.degree__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.degree__detail {
+  align-self: center;
+}
+.degree__image--center {
+  display: flex;
+  justify-content: center;
+}
+.degree__image {
+  max-width: 30%;
+  margin: 0 15px;
+}
+
+/*---------------------------------------------------------------------------*\
+  #AREA TERNARY
+\*---------------------------------------------------------------------------*/
+.feature--flex {
+  display: flex;
+  justify-content: space-around;
+}
+.feature__headline {
+  text-align: center;
+}
+.feature__item {
+  width: 90px;
+  border: 2px solid;
+}
+
+/*---------------------------------------------------------------------------*\
+  #AREA FOURTH
+\*---------------------------------------------------------------------------*/
+/* #COLOR*/
+.area__primary {
+  background-color: rgb(249, 249, 249);
+}
+
+.banner--fixed {
+  background-color: rgb(255, 255, 255);
+}
+
+.heros {
+  filter: grayscale(1);
 }
 
 /*# sourceMappingURL=style.css.map */
