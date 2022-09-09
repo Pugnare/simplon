@@ -1,31 +1,34 @@
 /*---------------------------------------------------------------------------*\
   #GENERIC
 \*---------------------------------------------------------------------------*/
-.headline {
 
-  margin-left: 30px;
-  padding: 10px 0 10px 20px;
 
-}
+
+
+
 
 /*---------------------------------------------------------------------------*\
   #AREA PRIMARY
 \*---------------------------------------------------------------------------*/
 
 .presentation {
-  &__headline {
-    width: 60%;
-    align-self: center;
-    text-align: center;
-  }
 
   &__container {
     display: flex;
     flex-direction: row-reverse;
     justify-content: space-evenly;
   }
+  
+  &__headline {
+    align-self: center;
+    text-align: center;
+    
+  }
+&__content{
+ max-width: 40%;
+}
 
-  &__content {
+  &__para {
     width: 40%;
   }
 }
@@ -36,20 +39,21 @@
 \*---------------------------------------------------------------------------*/
 .degree {
 
-  &__content{
+  &__content {
     display: flex;
     flex-direction: column;
     align-items: center;
   }
 
-  &__detail{
+  &__detail {
     align-self: center;
   }
 
-  &__image--center{
+  &__image--center {
     display: flex;
     justify-content: center;
   }
+
   &__image {
     max-width: 30%;
     margin: 0 15px;
@@ -62,20 +66,20 @@
   #AREA TERNARY
 \*---------------------------------------------------------------------------*/
 
-.feature{
+.feature {
 
 
 
-  &--flex{
+  &--flex {
     display: flex;
     justify-content: space-around;
   }
 
-&__headline{
-  text-align: center;
-}
+  &__headline {
+    text-align: center;
+  }
 
-  &__item{
+  &__item {
     width: 90px;
     border: 2px solid;
   }

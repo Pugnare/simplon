@@ -6,6 +6,7 @@
     width: 100%;
     display: flex;
     justify-content: space-between;
+    align-items: center;
     position: fixed;
   }
 }
@@ -15,10 +16,15 @@
 }
 
 .heros {
-  position: absolute;
-  left: 16em;
-  top: 0px;
   width: 20%;
+
+}
+
+.navbarre__main {
+  display: flex;
+  justify-content: flex-end;
+  flex-grow: 5;
+  padding-right: 30px;
 }
 
 .menu {
@@ -37,6 +43,3 @@
     text-align: center;
   }
 }
-
-
-
