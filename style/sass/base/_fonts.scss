@@ -31,19 +31,22 @@ h2{
   #FONTS SIZE
 \*---------------------------------------------------------------------------*/
 
+//--- generic -------------------------
 h2{
   text-transform: uppercase;
   font-size: var(--txt_very-large);
 }
 
+h3,th{ /* "th" référence head table */
+  text-transform: uppercase;
+  font-size: var(--txt_small)
+}
+
+//--- area primary --------------------
 h2.presentation__headline{
   font-size: var(--txt_very-big-large);
 }
 
-h3{
-  text-transform: uppercase;
-  font-size: var(--txt_small)
-}
 
 
 
@@ -53,26 +56,26 @@ h3{
   #FONTS COLOR
 \*---------------------------------------------------------------------------*/
 
-/*--- Header ------------------------*/
+//--- Header --------------------------
 .branding{
   color: var(--color-sub);
 }
 
-/*--- Navigator ---------------------*/
+//--- Navigator -----------------------
 .menu__link{
   color: var(--color-sub)
 }
 .menu__item:hover>.menu__link{
   color: var(--color-main)
 }
-/* --- Main -------------------------*/
+// --- Main ---------------------------
 
-// Area - primary
+/* --- Area - primary ---*/
 .presentation__container{
   color: var(--color-main);
 }
 
-// Area - binary
+/* ---Area - binary ---*/
 .degree{
   &__headline{
     color: var(--color-sub)
@@ -82,18 +85,27 @@ h3{
   color: var(--color-main)
 }}
 
-// Area - ternary
+/*--- Area - ternary ---*/
 .feature{
   &__headline{
     color: var(--color-main)
   }
 }
 
-//footer
+.feature__list span{
+color: var(--color-main);
+}
+
+/*-- Area fourth --*/
+.projet__headline{
+  color: var(--color-sub);
+}
+
+/*--- footer ---*/
 .footer__container{
   color: var(--color-main);
 }
+
 .footer__copyright{
   color: var(--color-sub);
- 
 }
