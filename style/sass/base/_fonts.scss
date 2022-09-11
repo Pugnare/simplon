@@ -1,0 +1,99 @@
+
+/*---------------------------------------------------------------------------*\
+  #FONTS STYLE
+\*---------------------------------------------------------------------------*/
+
+a{
+  text-decoration: none;
+}
+
+
+
+
+/*---------------------------------------------------------------------------*\
+  #FONTS FAMILY
+\*---------------------------------------------------------------------------*/
+
+body{
+  font-family: 'Montserrat', sans-serif;
+}
+
+h2{
+  font-family: 'Roboto Mono', sans-serif;
+}
+
+
+
+
+
+
+/*---------------------------------------------------------------------------*\
+  #FONTS SIZE
+\*---------------------------------------------------------------------------*/
+
+h2{
+  text-transform: uppercase;
+  font-size: var(--txt_very-large);
+}
+
+h2.presentation__headline{
+  font-size: var(--txt_very-big-large);
+}
+
+h3{
+  text-transform: uppercase;
+  font-size: var(--txt_small)
+}
+
+
+
+
+
+/*---------------------------------------------------------------------------*\
+  #FONTS COLOR
+\*---------------------------------------------------------------------------*/
+
+/*--- Header ------------------------*/
+.branding{
+  color: var(--color-sub);
+}
+
+/*--- Navigator ---------------------*/
+.menu__link{
+  color: var(--color-sub)
+}
+.menu__item:hover>.menu__link{
+  color: var(--color-main)
+}
+/* --- Main -------------------------*/
+
+// Area - primary
+.presentation__container{
+  color: var(--color-main);
+}
+
+// Area - binary
+.degree{
+  &__headline{
+    color: var(--color-sub)
+  }
+
+  &__sudheading, &__detail{
+  color: var(--color-main)
+}}
+
+// Area - ternary
+.feature{
+  &__headline{
+    color: var(--color-main)
+  }
+}
+
+//footer
+.footer__container{
+  color: var(--color-main);
+}
+.footer__copyright{
+  color: var(--color-sub);
+ 
+}

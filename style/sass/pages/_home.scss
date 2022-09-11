@@ -1,5 +1,101 @@
+/*---------------------------------------------------------------------------*\
+  #BACKGROUND-COLOR
+\*---------------------------------------------------------------------------*/
 
-/* #COLOR*/
-.area__primary{
-  background-color: $bg_primary;
+.area__primary {
+  background-color: $bg_ternary;
+}
+
+.area__binary {
+
+  .degree--bg {
+    background-color: $bg_ternary;
+  }
+}
+
+.area__ternary {
+  .feature__headline {
+    background-color: $bg_ternary;
+  }
+}
+
+
+.area__fourth {
+
+  .projet {
+
+    &__headline,
+    &--flex {
+      background-color: $bg-primary;
+    }
+  }
+}
+
+
+
+
+/*---------------------------------------------------------------------------*\
+  #BORDER
+\*---------------------------------------------------------------------------*/
+
+.area__binary {
+  .degree__image {
+    border: 2px solid $border-clr_primary;
+  }
+}
+
+
+
+
+
+
+
+/*----------------------------------------------------------------------------*\
+  #TABLE
+\*----------------------------------------------------------------------------*/
+
+
+.feature__list {
+
+  th,
+  tr,
+  td {
+    border: 5px solid $border-clr_sub;
+  }
+}
+
+.feature {
+
+  &__list:nth-child(1) {
+    td:nth-child(even) {
+      background: $bg_blue_light;
+    }
+
+    td:nth-child(odd) {
+      background: $bg_blue;
+    }
+  }
+
+  &__list:nth-child(2) {
+    td:nth-child(even) {
+      background: $bg_orange_light;
+    }
+
+    td:nth-child(odd) {
+      background: $bg_orange;
+    }
+  }
+}
+
+.footer{
+  &__container{
+    background-color: $bg_ternary;
+  }
+
+  &--flex{
+    border-left: 2px solid $border-clr_third;
+  }
+  &__copyright{
+    border-top: 2px solid $border-clr_third;
+  }
 }

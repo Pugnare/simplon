@@ -1,5 +1,5 @@
 .banner {
-  padding-bottom: 120px;
+  padding-bottom: 170px;
   height: 230px;
 
   &--fixed {
@@ -8,6 +8,7 @@
     justify-content: space-between;
     align-items: center;
     position: fixed;
+    z-index: 9999;
   }
 }
 
@@ -36,7 +37,8 @@
   &__item {
     display: flex;
     justify-content: center;
-    width: 90px;
+    padding: 1em 2em;
+    transition: .3s;
   }
 
   &__link {

@@ -12,6 +12,100 @@ li {
   list-style: none;
 }
 
+/*---------------------------------------------------------------------------*\
+  #FONTS STYLE
+\*---------------------------------------------------------------------------*/
+a {
+  text-decoration: none;
+}
+
+/*---------------------------------------------------------------------------*\
+  #FONTS FAMILY
+\*---------------------------------------------------------------------------*/
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+h2 {
+  font-family: "Roboto Mono", sans-serif;
+}
+
+/*---------------------------------------------------------------------------*\
+  #FONTS SIZE
+\*---------------------------------------------------------------------------*/
+h2 {
+  text-transform: uppercase;
+  font-size: var(--txt_very-large);
+}
+
+h2.presentation__headline {
+  font-size: var(--txt_very-big-large);
+}
+
+h3 {
+  text-transform: uppercase;
+  font-size: var(--txt_small);
+}
+
+/*---------------------------------------------------------------------------*\
+  #FONTS COLOR
+\*---------------------------------------------------------------------------*/
+/*--- Header ------------------------*/
+.branding {
+  color: var(--color-sub);
+}
+
+/*--- Navigator ---------------------*/
+.menu__link {
+  color: var(--color-sub);
+}
+
+.menu__item:hover > .menu__link {
+  color: var(--color-main);
+}
+
+/* --- Main -------------------------*/
+.presentation__container {
+  color: var(--color-main);
+}
+
+.degree__headline {
+  color: var(--color-sub);
+}
+.degree__sudheading, .degree__detail {
+  color: var(--color-main);
+}
+
+.feature__headline {
+  color: var(--color-main);
+}
+
+.footer__container {
+  color: var(--color-main);
+}
+
+.footer__copyright {
+  color: var(--color-sub);
+}
+
+/*---------------------------------------------------------------------------*\
+  #VARIABLE COLOR
+\*---------------------------------------------------------------------------*/
+:root {
+  --color-main: rgb(255, 255, 255);
+  --color-sub: rgb(106, 106, 106);
+}
+
+/*---------------------------------------------------------------------------*\
+  #VARIABLE SIZE
+\*---------------------------------------------------------------------------*/
+:root {
+  --txt_large:1em;
+  --txt_very-large: 2em;
+  --txt_very-big-large: 6em;
+  --txt_small:18px;
+}
+
 @media only screen and (max-width: 600px) {
   header {
     position: relative;
@@ -81,8 +175,24 @@ li {
   transition: transform 0.18s;
 }
 
+/*---------------------------------------------------------------------------*\
+  #FILTER
+\*----------------------------------------------------------------------------*/
+.degree__image {
+  filter: blur(4px) grayscale(1);
+  transition: 0.5s;
+}
+
+.degree__image:hover {
+  filter: blur(0) grayscale(0);
+}
+
+.menu__item:hover {
+  background-color: rgb(145, 143, 142);
+}
+
 .banner {
-  padding-bottom: 120px;
+  padding-bottom: 170px;
   height: 230px;
 }
 .banner--fixed {
@@ -91,6 +201,7 @@ li {
   justify-content: space-between;
   align-items: center;
   position: fixed;
+  z-index: 9999;
 }
 
 .branding {
@@ -114,7 +225,8 @@ li {
 .menu__item {
   display: flex;
   justify-content: center;
-  width: 90px;
+  padding: 1em 2em;
+  transition: 0.3s;
 }
 .menu__link {
   text-align: center;
@@ -130,6 +242,7 @@ li {
   display: flex;
   flex-direction: row-reverse;
   justify-content: space-evenly;
+  padding: 3em 0;
 }
 .presentation__headline {
   align-self: center;
@@ -138,51 +251,208 @@ li {
 .presentation__content {
   max-width: 40%;
 }
-.presentation__para {
-  width: 40%;
-}
 
 /*---------------------------------------------------------------------------*\
   #AREA BINARY
 \*---------------------------------------------------------------------------*/
+.degree__container {
+  display: flex;
+  flex-direction: column;
+  padding: 90px 0;
+}
+.degree__headline {
+  align-self: center;
+}
 .degree__content {
   display: flex;
   flex-direction: column;
   align-items: center;
-}
-.degree__detail {
   align-self: center;
+  padding: 0 50px;
+}
+.degree--align {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 60%;
+  padding: 1em 4em;
+  margin-bottom: 3em;
 }
 .degree__image--center {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
+  width: 70%;
 }
 .degree__image {
-  max-width: 30%;
-  margin: 0 15px;
+  max-width: 45%;
 }
 
 /*---------------------------------------------------------------------------*\
   #AREA TERNARY
 \*---------------------------------------------------------------------------*/
+.feature__container {
+  padding: 5em 0;
+}
+.feature__list {
+  width: 350px;
+}
 .feature--flex {
   display: flex;
   justify-content: space-around;
 }
 .feature__headline {
   text-align: center;
+  margin: 0 auto;
+  width: 72%;
+  padding: 20px 0;
+  margin-bottom: 2em;
 }
-.feature__item {
-  width: 90px;
-  border: 2px solid;
+
+th,
+tr,
+td {
+  border-collapse: collapse;
+  text-align: center;
+  vertical-align: middle;
+}
+
+th {
+  margin: 0 auto;
+}
+
+tr {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+td {
+  width: 100px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 /*---------------------------------------------------------------------------*\
   #AREA FOURTH
 \*---------------------------------------------------------------------------*/
-/* #COLOR*/
+.projet__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 9em;
+  padding: 0 2em;
+}
+.projet__headline {
+  width: 100%;
+  text-align: center;
+  padding: 0.5em 0;
+  margin-bottom: 1em;
+}
+.projet--flex {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 4em 0;
+}
+.projet--flex p, .projet--flex img {
+  width: 40%;
+}
+.projet--flex p {
+  align-self: center;
+}
+
+.footer__container {
+  display: grid;
+  grid-template-columns: 60% 40%;
+  grid-template-rows: auto;
+  grid-row-gap: 1em;
+  padding: 4em 4em 0;
+}
+.footer__detail {
+  padding: 2em;
+}
+.footer--flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.footer__social {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 50%;
+}
+.footer__headquters {
+  width: 50%;
+}
+.footer__copyright {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  display: flex;
+  justify-content: center;
+  vertical-align: baseline;
+  padding: 1em 0 10px 0;
+}
+.footer__copyright span:first-child {
+  padding-right: 10px;
+}
+
+/*---------------------------------------------------------------------------*\
+  #BACKGROUND-COLOR
+\*---------------------------------------------------------------------------*/
 .area__primary {
+  background-color: rgb(145, 143, 142);
+}
+
+.area__binary .degree--bg {
+  background-color: rgb(145, 143, 142);
+}
+
+.area__ternary .feature__headline {
+  background-color: rgb(145, 143, 142);
+}
+
+.area__fourth .projet__headline, .area__fourth .projet--flex {
   background-color: rgb(249, 249, 249);
+}
+
+/*---------------------------------------------------------------------------*\
+  #BORDER
+\*---------------------------------------------------------------------------*/
+.area__binary .degree__image {
+  border: 2px solid rgb(249, 249, 249);
+}
+
+/*----------------------------------------------------------------------------*\
+  #TABLE
+\*----------------------------------------------------------------------------*/
+.feature__list th,
+.feature__list tr,
+.feature__list td {
+  border: 5px solid rgb(255, 255, 255);
+}
+
+.feature__list:nth-child(1) td:nth-child(even) {
+  background: rgba(8, 135, 185, 0.5);
+}
+.feature__list:nth-child(1) td:nth-child(odd) {
+  background: rgb(8, 135, 185);
+}
+.feature__list:nth-child(2) td:nth-child(even) {
+  background: rgba(255, 145, 10, 0.5);
+}
+.feature__list:nth-child(2) td:nth-child(odd) {
+  background: rgb(255, 145, 10);
+}
+
+.footer__container {
+  background-color: rgb(145, 143, 142);
+}
+.footer--flex {
+  border-left: 2px solid rgb(106, 106, 106);
+}
+.footer__copyright {
+  border-top: 2px solid rgb(106, 106, 106);
 }
 
 .banner--fixed {

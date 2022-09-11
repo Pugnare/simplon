@@ -1,2 +1,45 @@
+
+
+/*---------------------------------------------------------------------------*\
+  #VARIABLE COLOR
+\*---------------------------------------------------------------------------*/
+
+// background-color -------------------
+
 $bg_primary: rgb(249, 249, 249); // gray light
 $bg_binary : rgb(255, 255, 255); // white
+$bg_ternary: rgb(145, 143, 142); // gray
+
+$bg_blue        : rgb(8, 135, 185); // blue drak
+$bg_blue_light  : rgba(8, 135, 185, 0.5); // blue light
+$bg_orange      : rgb(255, 145, 10);// orange
+$bg_orange-light: rgba(255, 145, 10, 0.5);// orange
+
+
+// border-color -----------------------
+
+$border-clr_primary: rgb(249, 249, 249); //gay light
+$border-clr_sub    : rgb(255, 255, 255); // white
+$border-clr_third: rgb(106, 106, 106); //gray very dark
+
+
+
+
+// text color -------------------------
+
+:root{
+  --color-main    : rgb(255, 255, 255); // white
+  --color-sub     : rgb(106, 106, 106); //gray very dark
+}
+
+/*---------------------------------------------------------------------------*\
+  #VARIABLE SIZE
+\*---------------------------------------------------------------------------*/
+
+:root{
+  --txt_large:1em;
+  --txt_very-large: 2em;
+  --txt_very-big-large: 6em;
+
+  --txt_small:18px;
+}

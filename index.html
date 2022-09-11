@@ -5,7 +5,10 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://kit.fontawesome.com/3e6bead995.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="style/css/style.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat|Roboto+Mono&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
   <title>CV - SIMPLON</title>
 </head>
 
@@ -18,7 +21,7 @@
 
         <input class="hamburg__btn" type="checkbox" id="hamburg">
         <!-- erreur "input" d'en je n'arrive pas a comprendre -->
-        
+
         <div class="hamburg__content">
           <span class="hamburg__item"></span>
           <span class="hamburg__item"></span>
@@ -68,22 +71,21 @@
 
 
 
-    <article class="area_binary degree__container">
+    <article class="area__binary degree__container">
       <h2 class="degree__headline headline">certificat</h2>
       <section class="degree__content">
-        <h3 class="degree__sudheading sudheading">sous titre</h3>
+        <div class="degree--align degree--bg">
+          <h3 class="degree__sudheading sudheading">sous titre</h3>
 
-        <span class="degree__detail">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ullam eum iste vitae
-          labore id in ipsum,
-          quam molestiae quae deserunt sapiente porro sunt necessitatibus expedita minima, facilis obcaecati
-          quidem quasi.</span>
-
+          <span class="degree__detail">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ullam eum iste vitae
+            labore id in ipsum,
+            quam molestiae quae deserunt sapiente porro sunt necessitatibus expedita minima, facilis obcaecati
+            quidem quasi.</span>
+        </div>
         <section class="degree__image--center">
           <img class="degree__image" src="./img/cert-html.jpg" alt="certificat html">
           <img class="degree__image" src="./img/cert-css.jpg" alt="certificat css">
         </section>
-
-
 
       </section>
     </article>
@@ -92,11 +94,12 @@
 
 
 
-    <article class="area_ternary feature__container">
+    <article class="area__ternary feature__container">
       <h2 class="feature__headline">acquis</h2>
       <div class="feature--flex">
 
         <table class="feature__list">
+
           <tr>
             <th class="feature__list-head" colspan="3">html</th>
           </tr>
@@ -105,15 +108,9 @@
             <td class="feature__item"><span>structure du document</span></td>
             <td class="feature__item"><span>information de la page</span></td>
             <td class="feature__item"><span>balise de structure</span></td>
-          </tr>
-
-          <tr class="feature__list-sub">
             <td class="feature__item"><span>liens</span></td>
             <td class="feature__item"><span>mise en forme de du texte</span></td>
             <td class="feature__item"><span>tableaux</span></td>
-          </tr>
-
-          <tr class="feature__list-sub">
             <td class="feature__item"><span>listes</span></td>
             <td class="feature__item"><span>formulaires</span></td>
             <td class="feature__item"><span>médias</span></td>
@@ -123,30 +120,19 @@
 
 
         <table class="feature__list">
-
           <tr>
             <th class="feature__list-head" colspan="3">css</th>
           </tr>
-
-          <tr class="feature__list-sub">
+          <tr>
             <td><span>sélecteurs</span></td>
             <td><span>texte</span></td>
-            <td><span>espacement & bordures</span></td>
-          </tr>
-
-          <tr class="feature__list-sub">
+            <td><span>espacement, bordures et arriere-plan</span></td>
             <td><span>nouveautés css3</span></td>
             <td><span>medias queries</span></td>
             <td><span>pseudo classes</span></td>
-          </tr>
 
-          <tr class="feature__list-sub">
-            <td><span>arriere-plan</span></td>
             <td><span>listes</span></td>
             <td><span>positionnement et tailles</span></td>
-
-          <tr class="feature__list-sub">
-          <tr>
             <td><span>position et tailles</span></td>
           </tr>
 
@@ -156,21 +142,59 @@
     </article>
 
 
-    <article class="area_fourth">
-      <h2 class="headline">Projet professsionel</h2>
-      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Enim perferendis commodi laboriosam suscipit
-      nobis, iure nemo eius eos aperiam mollitia et dolore id aut illo repellendus tempora. Repudiandae blanditiis
-      numquam iste. Optio nostrum nobis autem, ut tempore laboriosam, sint officia inventore voluptatum,
-      consequuntur ullam! Molestiae hic possimus expedita cupiditate quidem facilis ab libero quam, optio nam
-      maxime architecto id porro eius adipisci corporis laudantium cumque obcaecati? Nihil, ea. Facere quod
-      maxime, harum omnis ipsa repellat? Nihil ducimus libero nemo quaerat natus ipsam maiores omnis laboriosam
-      voluptatem eaque distinctio, nam qui. Expedita, quae porro? Ipsum ipsa doloremque qui animi ipsam quibusdam
-      dignissimos! Sed eligendi voluptatem blanditiis, voluptatibus quia fugiat saepe unde nam corrupti minima
-      impedit labore mollitia nulla. Eius, voluptate delectus!
+    <article class="area__fourth projet__container">
+      <h2 class="projet__headline">Projet professsionel</h2>
+      <div class="projet--flex">
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Enim perferendis commodi laboriosam suscipit
+          nobis, iure nemo eius eos aperiam mollitia et dolore id aut illo repellendus tempora. Repudiandae blanditiis
+          numquam iste. Optio nostrum nobis autem, ut tempore laboriosam, sint officia inventore voluptatum,
+          consequuntur ullam! Molestiae hic possimus expedita cupiditate quidem facilis ab libero quam, optio nam
+          maxime architecto id porro eius adipisci corporis laudantium cumque obcaecati? Nihil, ea. Facere quod
+          maxime, harum omnis ipsa repellat? Nihil ducimus libero nemo quaerat natus ipsam maiores omnis laboriosam
+          voluptatem eaque distinctio, nam qui. Expedita, quae porro? Ipsum ipsa doloremque qui animi ipsam quibusdam
+          dignissimos! Sed eligendi voluptatem blanditiis, voluptatibus quia fugiat saepe unde nam corrupti minima
+          impedit labore mollitia nulla. Eius, voluptate delectus!</p>
+        <img src="./img/Full-Stack-Developer-Certification-Feature.png" alt="">
+      </div>
     </article>
 
   </main>
-  <footer></footer>
+
+  <footer class="footer__container">
+    <section class="footer__detail">
+      <h3 class="footer__sudheading">Jacques Diarra</h3>
+      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quidem a quo fugiat ducimus quaerat. Iusto debitis
+        nisi
+        iure! Vel, maxime architecto? Animi recusandae aut quia provident ad fugit expedita distinctio assumenda
+        doloribus
+        delectus ratione dignissimos error explicabo cupiditate reprehenderit, mollitia adipisci nesciunt natus labore
+        ea
+        sit fuga laudantium quasi. Architecto.</p>
+    </section>
+
+    <div class="footer--flex">
+      <ul class="footer__social">
+        <li class="social__item facebook"><i class="fa fa-facebook"></i></li>
+        <li class="social__item twitter"><i class="fa fa-twitter"></i></li>
+        <li class="social__item pinterest"><i class="fa fa-pinterest"></i></li>
+      </ul>
+
+      <address class="footer__headquters">
+        <a href="mailto:">diarra.jacques@hotmail.fr</a>
+        <a href="tel:+">0624612566</a><br>
+        68 rue des sarements <br>
+        95490 vauréal <br>
+        france
+      </address>
+    </div>
+
+    <div class="footer__copyright">
+      <span class="copyright material-icons">copyright</span>
+      <span>jacques diarra 2022</span>
+    </div>
+
+  </footer>
+
 </body>
 
 </html>

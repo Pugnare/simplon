@@ -17,49 +17,71 @@
     display: flex;
     flex-direction: row-reverse;
     justify-content: space-evenly;
+    padding: 3em 0;
   }
-  
+
   &__headline {
     align-self: center;
     text-align: center;
-    
   }
-&__content{
- max-width: 40%;
+
+  &__content {
+    max-width: 40%;
+  }
 }
 
-  &__para {
-    width: 40%;
-  }
-}
+
+
 
 
 /*---------------------------------------------------------------------------*\
   #AREA BINARY
 \*---------------------------------------------------------------------------*/
-.degree {
 
+.degree {
+  &__container {
+    display:flex;
+    flex-direction: column;
+   
+    padding: 90px 0;
+  }
+
+  &__headline {
+   align-self: center
+  }
+
+  
   &__content {
     display: flex;
     flex-direction: column;
     align-items: center;
+    align-self: center;
+    padding: 0 50px;
+  }
+  
+  &--align{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 60%;
+    padding: 1em 4em;
+    margin-bottom: 3em;
   }
 
-  &__detail {
-    align-self: center;
-  }
 
   &__image--center {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
+    width: 70%;
   }
 
   &__image {
-    max-width: 30%;
-    margin: 0 15px;
+    max-width: 45%;
   }
-
 }
+
+
+
 
 
 /*---------------------------------------------------------------------------*\
@@ -68,7 +90,13 @@
 
 .feature {
 
+  &__container {
+    padding: 5em 0;
+  }
 
+  &__list {
+    width: 350px;
+  }
 
   &--flex {
     display: flex;
@@ -77,14 +105,75 @@
 
   &__headline {
     text-align: center;
+    margin: 0 auto;
+    width: 72%;
+    padding:20px 0;
+    margin-bottom: 2em;
   }
 
-  &__item {
-    width: 90px;
-    border: 2px solid;
-  }
+
 }
+
+th,
+tr,
+td {
+  border-collapse: collapse;
+  text-align: center;
+  vertical-align: middle;
+}
+
+th {
+  margin: 0 auto;
+}
+
+tr {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+td {
+  width: 100px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+
+
 
 /*---------------------------------------------------------------------------*\
   #AREA FOURTH
 \*---------------------------------------------------------------------------*/
+
+.projet {
+  &__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 9em;
+    padding: 0 2em; 
+  }
+
+  &__headline {
+    width: 100%;
+    text-align: center;
+    padding: 0.5em 0;
+    margin-bottom: 1em;
+  }
+
+  &--flex {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 4em 0;
+
+    p, img {
+      width: 40%;
+    }
+    p{
+      align-self: center;
+    }
+  }
+}

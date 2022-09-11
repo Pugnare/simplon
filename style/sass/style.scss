@@ -2,11 +2,15 @@
 @import 'base/fonts';
 
 @import 'utils/variable';
+@import 'utils/icons';
+
 
 @import 'components/viewport';
 @import 'components/hamburger';
+@import 'components/animation';
+@import 'components/navbarre';
 
-@import 'layout/navbarre';
+
 @import 'layout/header';
 @import 'layout/main';
 @import 'layout/footer';

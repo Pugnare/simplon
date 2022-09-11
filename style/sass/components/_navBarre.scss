@@ -1,0 +1,8 @@
+// transition background button
+
+.menu{
+
+  &__item:hover{
+    background-color: $bg_ternary;
+  }
+}
