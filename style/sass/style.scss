@@ -1,19 +1,19 @@
 @import 'base/reset';
 @import 'base/fonts';
 
-@import 'utils/variable';
-@import 'utils/icons';
-
-
-@import 'components/viewport';
-@import 'components/hamburger';
-@import 'components/animation';
-@import 'components/navbarre';
-
-
 @import 'layout/header';
 @import 'layout/main';
 @import 'layout/footer';
 
+@import 'utils/variable';
+@import 'utils/icons';
+
 @import 'pages/home';
 @import 'pages/banner';
+
+@import 'components/animation';
+@import 'components/viewport';
+@import 'components/hamburger';
+@import 'components/navbarre';
+
+

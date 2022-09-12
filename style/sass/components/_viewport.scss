@@ -1,46 +1,170 @@
+/*---------------------------------------------------------------------------*\
+  #MEDIA QUERY MAX 600PX
+\*---------------------------------------------------------------------------*/
+
 @media only screen and (max-width: 600px) {
+  body {
+    max-width: 599px;
+    padding: 0 15px;
+  }
+
   header {
     position: relative;
+  }
+
+  p {
+    text-align: justify;
+  }
+
+  .branding{
+    padding-right: 9em;
+  }
+
+  //--- ELEMENTS HIDDEN --------------
+
+  .menu__content {
+   // visibility: hidden;
+  }
+
+  img.heros {
+    visibility: hidden;
+  }
+  //-------------------------------------
+
+
+
+
+  //--- HAMBUGER BUTTON------------------
+
+  .hamburg {
+
+
+    &__content,
+    &__btn {
+      position: absolute;
+      top: 35px;
+      right: 80px;
+    }
+
+    &__btn~.menu__content {
+      visibility: hidden;
+     position: absolute;
+     background-color: $bg_binary;
+    }
+    &__btn:checked~.menu__content {
+      visibility: visible;
+      transition: .5s;
+    }
+  }
+  //-------------------------------------
+
+
+  //-- Navbarre -------------------------
+.banner--fixed{
+  flex-direction: column;
+}
+
+.navbarre__main{
+  padding: initial;
+}
+
+  .menu__content{
+  flex-grow:initial;
+  flex-flow: column wrap;
+}
+
+  //-- AREA PRIMARY ---------------------
+  .presentation {
+
+    &__container {
+      display: flex;
+      flex-direction: column-reverse;
+      justify-content: initial;
+    }
+
+    &__content {
+      max-width: none;
+      padding: 0 15px;
+    }
+  }
+
+  //-- AREA BINARY ----------------------
+
+  .degree {
+    &__image--center {
+      flex-direction: column;
+      align-items: center;
+      width: initial;
+    }
+
+    &__image {
+      max-width: 100%;
+      filter: blur(0) grayscale(0);
+    }
+
+    &__image:first-child {
+      margin-bottom: 4em;
+    }
+  }
+
+  //-- AREA FOURTH -----------------------
+  .projet {
+
+    &--flex {
+      flex-direction: column;
+      align-items: center;
+
+      p,
+      img {
+        width: 100%
+      }
+    }
+  }
+
+  //-- FOOTER ---------------------------
+
+  .footer {
+    &__container {
+      display: initial;
+      display: flex;
+      flex-direction: column;
+    }
+
+    &--flex{
+      border:initial;
+      justify-content: space-around;
+    }
+
+    &__social{
+      width: 30px;
+    }
+  }
+
+
+
+
+}
+
+
+
+
+/*---------------------------------------------------------------------------*\
+  #MEDIA QUERY MIN 600PX
+\*---------------------------------------------------------------------------*/
+@media only screen and (min-width: 601px) {
+  header {
+    position: initial;
   }
 
   .hamburg {
 
     &__btn,
     &__content {
-      position: absolute;
-      right: 0;
-      top: 0;
-    }
-
-    &__btn {
-      top: -5px;
-      right: -3px;
-    }
-
-    &__btn~.menu {
       visibility: hidden;
     }
 
-    &__btn:checked~.menu {
-      visibility: visible;
+    &__btn~.menu {
+      visibility: initial;
     }
   }
 }
-
-  @media only screen and (min-width: 601px) {
-    header {
-      position: initial;
-    }
-
-    .hamburg {
-
-      &__btn,
-      &__content {
-        visibility: hidden;
-      }
-
-      &__btn~.menu {
-        visibility: initial;
-      }
-    }
-  }
